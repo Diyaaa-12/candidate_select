@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/candidates', require('./routes/candidates'));
-app.use('/api/match', require('./routes/match'));
+app.use('/match', require('./routes/match'));
 app.use('/api/ai', require('./routes/ai'));
 app.use('/api/auth', require('./routes/auth'));   // ← this must be here
 
