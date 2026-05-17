@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios'
-
-const API = 'https://candidate-selection-backend-i4gj.onrender.com'
+import API from '../config'
 
 function CandidateForm({ onAdd }) {
   const [form, setForm] = useState({ name: '', email: '', skills: '', experience: '' })
