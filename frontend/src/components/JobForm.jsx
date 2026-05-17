@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import axios from 'axios'
 
-const API = 'http://localhost:5000/api'
+const API = 'https://candidate-selection-backend.onrender.com'
 
 function JobForm({ setShortlisted, setAiResult }) {
   const [requiredSkills, setRequiredSkills] = useState('')

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const API = 'http://localhost:5000/api'
+const API = 'https://candidate-selection-backend-i4gj.onrender.com'
 
 function CandidateList({ refresh }) {
   const [candidates, setCandidates] = useState([])
