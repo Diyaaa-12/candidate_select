@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Candidate = require('../models/Candidate');
 const fetch = require('node-fetch');
+router.post('/shortlist')
 router.post('/shortlist', async (req, res) => {
   try {
     const { requiredSkills, minExperience } = req.body;
