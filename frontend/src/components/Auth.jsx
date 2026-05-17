@@ -22,7 +22,7 @@ function Auth({ setToken }) {
 
     setLoading(true)
     try {
-      const url = isLogin ? `${API}/api/auth/login` : `${API}/api/auth/register`
+      const url = isLogin ? `${API}/api/auth/login` : `${API}/auth/register`
       const res = await axios.post(url, { email, password })
 
       if (isLogin) {
